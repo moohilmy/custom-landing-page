@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Framwork.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+</head>
+<body>
+    <div class="settings-box">
+        <div class="icon"><i class="fa-solid fa-gear gear"></i></div>
+        <div  class="settings-continar">
+            <div id="height" class="option-box">
+                <h4>Colors</h4>
+                <ul class="color-list">
+                    <li class="active" data-color="#ffa500" onclick ="remove()"></li>
+                    <li data-color="#e91e63" onclick ="remove()"></li>
+                    <li data-color="#03a9a4" onclick ="remove()"></li>
+                    <li onclick ="remove()" data-color="#4caf50" ></li>
+                    <li id="lastChild" class="lastChild" onclick="setDataColor()">
+                        <div class="colorPick">
+                                <div>
+                                    <span>RED</span>
+                                    <input type="range" min="0" max="256" value="128" class="red" oninput="colors()"></input>
+                                    <span id="value">128</span>
+                                </div>
+                                <div>
+                                    <span>GREEN</span>
+                                    <input type="range" min="0" max="256" value="128" class="green" oninput="colors()"></input>
+                                    <span id="value">128</span>
+                                </div>
+                                <div>
+                                    <span>BLUE</span>
+                                    <input type="range" min="0" max="256" value="128" class="blue" oninput="colors()"></input>
+                                    <span id="value">128</span>
+                                </div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="option" class="option-box">
+                <h4>Background</h4>
+                <div class="random-Backgrounds choose">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="imageBox">
+                <img data-img="01" src="image/01.jpg" alt="image one">
+                <img data-img="02" src="image/02.jpg" alt="image Two">
+                <img data-img="03" src="image/03.jpg" alt="image Three">
+                <img data-img="04" src="image/04.jpg" alt="image Four">
+                <img data-img="05" src="image/05.jpg">
+                <img data-img="06" src="image/06.jpg">
+                <img data-img="07" src="image/07.jpg">
+                <img data-img="08" src="image/08.jpg">
+                <img data-img="09" src="image/09.jpg">
+                <img data-img="10" src="image/10.jpg">
+            </div>
+            <div id="option" class="option-box">
+                <h4>Show bullets</h4>
+                <div class="bulletsOption choose">
+                    <span class="yes active" data-display="show">Yes</span>
+                    <span class="no" data-display="hide">No</span>
+                </div>
+            </div>
+            <button class="resetOption">Rest Options</button>
+        </div>
+    </div>
+    <div class="navBullets">
+
+    </div>
+    <div class="landing-page ol">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    Special Design
+                </div>
+                <i class="fa-solid fa-bars" id="bars"><span></span></i>
+                <ul class="links">
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h2>We Are <span>Creative</span> Agency</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, magni. Consequatur dolore saepe</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section  data-section="About-As" class="About">
+            <div class="infoBox">
+                <h2 class="tittle">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo animi distinctio impedit deleniti labore reprehenderit numquam soluta ducimus temporibus saepe harum rerum, dolore laudantium sunt molestiae commodi nemo, obcaecati cum.]</p>
+            </div>
+            <div class="imageBox">
+                <img src="image/about-As.png" alt="">
+            </div>
+        </section>
+    </div>
+    <section data-section="Skills" class="skills">
+        <div class="container">
+            <h2 class="tittle">Our Skills</h2>
+            <div class="skillBox">
+                <div class="name">
+                    HTML
+                </div>
+                <div class="skillProgress">
+                    <span data-progress="80%">
+                    </span>
+                </div>
+            </div>
+            <div class="skillBox">
+                <div class="name">
+                    CSS
+                </div>
+                <div class="skillProgress">
+                    <span data-progress="90%">
+                    </span>
+                </div>
+            </div>
+            <div class="skillBox">
+                <div class="name">
+                    Javascript
+                </div>
+                <div class="skillProgress">
+                    <span data-progress="60%">
+                    </span>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section data-section="gallery" class="gallery">
+        <div class="container">
+            <h2 class="tittle">Our gallery</h2>
+            <div class="imageBox">
+                <img src="image/01.jpg" alt="image one">
+                <img src="image/02.jpg" alt="image Two">
+                <img src="image/03.jpg" alt="image Three">
+                <img src="image/04.jpg" alt="image Four">
+                <img src="image/05.jpg">
+                <img src="image/06.jpg">
+                <img src="image/07.jpg">
+                <img src="image/08.jpg">
+                <img src="image/09.jpg">
+                <img src="image/10.jpg">
+            </div>
+        </div>
+    </section>
+    <section data-section="timeline" class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2018</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam laudantium voluptatem voluptate fugiat nulla perspiciatis et! Soluta eligendi placeat odio amet, sunt reiciendis, suscipit sint aperiam tempore, earum eius.</p>
+                    </div>
+                </div>
+                <div class="clearFix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam laudantium voluptatem voluptate fugiat nulla perspiciatis et! Soluta eligendi placeat odio amet, sunt reiciendis, suscipit sint aperiam tempore, earum eius.</p>
+                    </div>
+                </div>
+                <div class="clearFix"></div>
+                <div class="year">2016</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam laudantium voluptatem voluptate fugiat nulla perspiciatis et! Soluta eligendi placeat odio amet, sunt reiciendis, suscipit sint aperiam tempore, earum eius.</p>
+                    </div>
+                </div>
+                <div class="clearFix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam laudantium voluptatem voluptate fugiat nulla perspiciatis et! Soluta eligendi placeat odio amet, sunt reiciendis, suscipit sint aperiam tempore, earum eius.</p>
+                    </div>
+                </div>
+                <div class="clearFix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing heading</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam laudantium voluptatem voluptate fugiat nulla perspiciatis et! Soluta eligendi placeat odio amet, sunt reiciendis, suscipit sint aperiam tempore, earum eius.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-section="features" class="features">
+        <h2 class="tittle">Features</h2>
+        <div class="container">
+            <div class="featBox">
+                <img src="image/icon01.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featBox">
+                <img src="image/icon02.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featBox">
+                <img src="image/icon03.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featBox">
+                <img src="image/icon04.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featBox">
+                <img src="image/icon05.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featBox">
+                <img src="image/icon06.png" alt="">
+                <h4>Devolopment</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <section data-section="testmonials" class="testmonials">
+        <div class="container">
+                <h2 class="tittle">Testmonials</h2>
+            <div class="tmContent">
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>Ahmad mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>moo mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>ali mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>alaa mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>mike mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tsBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora inventore veniam.</p>
+                    <div class="personInfo">
+                        <div class="imageBox"><img src="image/Parson.png" alt=""></div>
+                        <div class="textInfo">
+                        <h4>gigi mosaad</h4>
+                        <p>CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+            <i id="right" data-arr="right"  class="fa-solid fa-chevron-right"></i>
+            <i id="left" data-arr="left"  class="fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2 class="tittle">Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="text" placeholder="Your Phone" name="Phone">
+                    <input type="email" placeholder="Your email" name="email">
+                    <input type="text" placeholder="Subject" name="Subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>Created by Moohilmy <i class="fa-regular fa-copyright"></i></div>
+    </footer>
+</body>
+<script src="js/master.js"></script>
+<script src="js/anime.min.js" defer></script>
+</html>
